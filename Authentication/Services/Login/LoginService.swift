@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol LoginService { }
+protocol LoginService {
+    func login(parameter: LoginParameter) async throws -> User
+}

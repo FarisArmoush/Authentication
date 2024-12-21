@@ -9,7 +9,17 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text("Bye, World")
+        NavigationView {
+            VStack(spacing: 16) {
+                TextField("E-Mail", text: .constant(""))
+                    .padding(.top)
+                
+                TextField("Password", text: .constant(""))
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("Login")
+        }
     }
 }
 

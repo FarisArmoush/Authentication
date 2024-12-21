@@ -16,6 +16,10 @@ struct LoginView: View {
                 
                 TextField("Password", text: .constant(""))
                 Spacer()
+                Button(action: { }) {
+                    Text("Login").frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
             }
             .textFieldStyle(.authentication)
             .padding()
